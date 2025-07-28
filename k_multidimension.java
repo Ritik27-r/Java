@@ -42,5 +42,20 @@ public class k_multidimension {
             }
             System.out.println();
         }
+
+        //Jagged array
+        System.out.println("Jagged Array (Different Column Sizes):");
+        int arr4[][] = new int[3][];
+        arr4[0] = new int[2]; // First row has 2 columns
+        arr4[1] = new int[3]; // Second row has 3 columns
+        arr4[2] = new int[1]; // Third row has 1 column
+        
+        for(int n[]: arr4){ //This is enhanced for loop
+            for(int m:n){
+                m = (int)(Math.random()*100); // Random initialization
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
     }
 }
